@@ -58,7 +58,7 @@ const Services = () => {
     {
       icon: (
         <img
-          src="/Smart-Home-security.jpg"
+          src="/Smart-Home-Security.jpg"
           alt="Home Security Systems"
           className="h-20 w-40 object-cover rounded-xl"
         />
