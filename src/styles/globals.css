@@ -19,6 +19,5 @@ body {
 .animate-marquee {
   animation: marquee 15s linear infinite;
   white-space: nowrap;
-  overflow: hidden;
   display: inline-block;
 }
