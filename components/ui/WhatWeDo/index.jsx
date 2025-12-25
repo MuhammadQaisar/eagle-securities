@@ -6,8 +6,7 @@ export default function WhatWeDo() {
     <div>
       <section
         id="about"
-        className="relative py-20 px-4 text-white overflow-hidden"
-        style={{ backgroundColor: "#591A5D" }}
+        className="relative py-20 px-4 text-white overflow-hidden bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]"
       >
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -44,7 +43,7 @@ export default function WhatWeDo() {
                     key={index}
                     className="flex items-center space-x-3 p-2 rounded-lg hover:bg-zinc-800/50 transition-colors duration-300"
                   >
-                    <CheckCircle className="w-6 h-6 text-red-500 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-white-500 flex-shrink-0" />
                     <span className="text-gray-200 font-medium">{item}</span>
                   </div>
                 ))}
@@ -53,7 +52,7 @@ export default function WhatWeDo() {
             <div className="relative">
               <div className="absolute inset-0 bg-red-600/20 rounded-lg filter blur-3xl"></div>
               <div className="relative bg-[#FFFFFF] border border-red-800/50 rounded-2xl p-8 shadow-2xl hover:shadow-red-900/20 transition-shadow duration-300">
-                <div className="bg-red-800/30 w-fit p-4 rounded-2xl mb-6 backdrop-blur-sm">
+                <div className="w-fit p-4 rounded-2xl mb-6 backdrop-blur-sm">
                   <img
                     src="/trtl-svgrepo-com.svg"
                     alt="Mission Icon"

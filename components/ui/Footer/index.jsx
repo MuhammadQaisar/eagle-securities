@@ -3,12 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer
-      style={{
-        backgroundColor: '#591A5D',
-        backgroundImage: `url("data:image/svg+xml,%3csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle fill='%23FFF' fill-opacity='0.1' cx='10' cy='10' r='2'/%3e%3c/svg%3e")`,
-      }}
-    >
+    <footer className="bg-zinc-900">
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">

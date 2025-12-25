@@ -97,25 +97,6 @@ const Services = () => {
                             {service.description}
                           </p>
                         </div>
-                        <Link
-                          href={service.link}
-                          className="inline-flex items-center justify-center px-10 py-2 border border-transparent text-base font-medium rounded-md text-white bg-[#591A5D] hover:bg-[#4a154d] mt-auto"
-                        >
-                          Learn More
-                          <svg
-                            className="ml-2 -mr-1 h-5 w-5"
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </Link>
                       </div>
                     ))}
                   </div>      </div>

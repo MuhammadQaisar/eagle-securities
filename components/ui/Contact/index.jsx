@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           {/* Contact Information */}
-          <div className="lg:col-span-1 bg-white p-8 rounded-lg shadow-lg">
+          <div className="lg:col-span-1 p-8 rounded-lg ">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Get in Touch
             </h3>
@@ -62,7 +62,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="lg:col-span-2 bg-white p-8 rounded-lg shadow-lg">
+          <div className="lg:col-span-2 p-8 rounded-lg">
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="md:col-span-1">
                 <label
@@ -82,20 +82,21 @@ const Contact = () => {
               </div>
               <div className="md:col-span-1">
                 <label
-                  htmlFor="last-name"
+                  htmlFor="phone-number"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Last name
+                  Phone number
                 </label>
                 <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autoComplete="family-name"
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  autoComplete="tel"
                   className="mt-1 block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-[#591A5D] focus:border-[#591A5D] border-gray-300 rounded-md"
-                  placeholder="Doe"
+                  placeholder="123-456-7890"
                 />
               </div>
+
               <div className="md:col-span-2">
                 <label
                   htmlFor="email"
@@ -130,7 +131,7 @@ const Contact = () => {
               <div className="md:col-span-2 text-right">
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-[#591A5D] hover:bg-[#4a154d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#591A5D]"
+                  className="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#591A5D]"
                 >
                   Send Message
                 </button>

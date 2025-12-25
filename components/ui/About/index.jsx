@@ -20,17 +20,17 @@ const About = () => {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src="/about-image1.png"
+                src="/about-image3.png"
                 alt="About Eagle Securities"
                 className="w-full h-full object-cover object-center"
               />
               {/* Experience Badge */}
-              <div className="absolute bottom-0 left-0 bg-[#591A5D] text-white p-6 rounded-tr-2xl">
+              {/* <div className="absolute bottom-0 left-0 bg-[#591A5D] text-white p-6 rounded-tr-2xl">
                 <p className="text-3xl font-bold">15+</p>
                 <p className="text-xs font-medium uppercase tracking-wider">
                   Years Experience
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -38,8 +38,8 @@ const About = () => {
             <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2">
               Who We Are
             </h4>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#591A5D] mb-6">
-              About Eagle Securities
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
+              About Us
             </h2>
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
               Eagle Securities is a leading provider of comprehensive security
@@ -63,16 +63,16 @@ const About = () => {
               ))}
             </div>
 
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-5 leading-relaxed">
               Our team of highly skilled professionals utilizes state-of-the-art
               technology to design, install, and maintain security systems
               tailored to your unique needs.
             </p>
 
             {/* Contact Card */}
-            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className="bg-white rounded-xl p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#591A5D]/10 text-[#591A5D]">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#591A5D] text-[#591A5D]">
                   <img src="/phone.svg" alt="Phone" className="h-6 w-6" />
                 </div>
                 <div className="text-left">
@@ -80,12 +80,12 @@ const About = () => {
                     Call Directly 24/7
                   </div>
                   <div className="text-lg font-bold text-gray-900">
-                    +(1) 281 602 3421
+                    +(1) 111 111 1111
                   </div>
                 </div>
               </div>
-              <button className="inline-flex items-center gap-2 bg-[#591A5D] text-white px-10 py-3 rounded-full shadow hover:bg-[#4a154d] transition-colors">
-                Learn more
+              <button className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] text-white">
+                Contact Us
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"

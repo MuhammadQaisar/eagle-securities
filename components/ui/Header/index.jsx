@@ -12,15 +12,20 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 md:py-6"> {/* Adjusted py for mobile */}
+        <div className="flex justify-between items-center py-4 md:py-6">
+          {" "}
+          {/* Adjusted py for mobile */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-bold" style={{ color: '#591A5D' }}>
-                Eagle Securities
-              </span>
+              <img
+                src="/eagle-securities.png"
+                alt="Eagle Securities"
+                width={50}
+                height={30}
+                className="object-contain"
+              />
             </Link>
           </div>
-
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-10">
             <Link
@@ -46,12 +51,11 @@ const Header = () => {
             {/* Original CTA button */}
             <Link
               href="/contact"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#591A5D] hover:bg-[#4a154d]"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
             >
               Schedule a Call
             </Link>
           </div>
-
           {/* Mobile menu button */}
           <div className="-mr-2 flex items-center md:hidden">
             <button
@@ -99,7 +103,7 @@ const Header = () => {
             {/* Mobile CTA button - replicating the desktop button's text and link */}
             <Link
               href="/contact"
-              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#591A5D] hover:bg-[#4a154d] w-full"
+              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] w-full"
               onClick={toggleMenu}
             >
               Schedule a Call

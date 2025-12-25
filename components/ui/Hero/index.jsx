@@ -2,11 +2,14 @@ const Hero = () => {
   return (
     <section
       className="relative text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
-      style={{ backgroundColor: "#591A5D" }}
+      style={{
+        backgroundColor: "#591A5D",
+        fontFamily: "'Urbanist', sans-serif",
+      }}
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="/heroimage.png" // Replace with your background image
+          src="/hero-image.webp" // Replace with your background image
           alt="Security Surveillance Background"
           className="w-full h-full object-cover opacity-30"
         />
@@ -27,7 +30,7 @@ const Hero = () => {
           <div className="mt-8 flex justify-center lg:justify-start">
             <a
               href="#"
-              className="inline-block bg-[#591A5D] text-white-900 font-normal py-3 px-8 rounded hover:bg-yellow-500 transition duration-300"
+              className="inline-block text-white-900 font-normal py-3 px-8 rounded bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] transition duration-300"
             >
               Get a Free Quote
             </a>
@@ -62,9 +65,7 @@ const Hero = () => {
               />
             </div>
             <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
-              Advanced Surveillance
-              <br />
-              Technology
+              Advanced Surveillance 
             </h3>
           </div>
 
