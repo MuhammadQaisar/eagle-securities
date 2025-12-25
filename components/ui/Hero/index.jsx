@@ -9,16 +9,16 @@ const Hero = () => {
     >
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-image.webp" // Replace with your background image
+          src="/hero-image.png" // Replace with your background image
           alt="Security Surveillance Background"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-30 h-64 sm:h-full object-top"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
 
       <div className="relative z-40 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
         <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6 animate-fade-in-up">
             Your Trusted Partner in{" "}
             <span className="text-[#a8dadc]">Security & Surveillance</span>
           </h1>

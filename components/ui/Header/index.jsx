@@ -24,6 +24,7 @@ const Header = () => {
                 height={30}
                 className="object-contain"
               />
+              <span className="ml-2 text-xl font-bold text-gray-900">Eagle Securities</span>
             </Link>
           </div>
           {/* Desktop Navigation */}
