@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
-              className="h-10"
-              src="/logo-white.svg"
+              className="h-16 rounded"
+              src="/eagle-securities.png"
               alt="Eagle Securities"
             />
             <p className="text-gray-400 text-base">

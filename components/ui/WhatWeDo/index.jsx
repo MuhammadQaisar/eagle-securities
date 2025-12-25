@@ -28,7 +28,7 @@ export default function WhatWeDo() {
                 professional security personnel, and 24/7 monitoring services.
               </p>
               <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-                With over 15 years of experience, we've protected hundreds of
+                With over 9 years of experience, we've protected hundreds of
                 residential and commercial properties with cutting-edge
                 technology and highly trained security professionals.
               </p>

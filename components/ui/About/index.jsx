@@ -80,7 +80,7 @@ const About = () => {
                     Call Directly 24/7
                   </div>
                   <div className="text-lg font-bold text-gray-900">
-                    +(1) 111 111 1111
+                    +92(346) 907-8448
                   </div>
                 </div>
               </div>

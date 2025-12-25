@@ -1,4 +1,4 @@
-import { Shield, Home, Building } from "lucide-react";
+import { Building } from "lucide-react";
 import Link from "next/link"; // Added Link import
 
 const Services = () => {
@@ -6,9 +6,9 @@ const Services = () => {
     {
       icon: (
         <img
-          src="/video-svgrepo-com.svg"
-          alt="Video Surveillance"
-          className="h-12 w-12"
+          src="/cctv-1.jpg"
+          alt="CCTV & Video Surveillance"
+          className="h-20 w-40 object-cover rounded-xl"
         />
       ),
       title: "CCTV & Video Surveillance",
@@ -19,9 +19,9 @@ const Services = () => {
     {
       icon: (
         <img
-          src="/access-browser-key-svgrepo-com.svg"
-          alt="Access Control"
-          className="h-12 w-12"
+          src="/access-control.jpeg"
+          alt="Access Control Systems"
+          className="h-20 w-40 object-cover rounded-xl"
         />
       ),
       title: "Access Control Systems",
@@ -32,9 +32,9 @@ const Services = () => {
     {
       icon: (
         <img
-          src="/notification-unread-lines-svgrepo-com.svg"
+          src="/alarm-monitoring.jpeg"
           alt="Alarm Monitoring"
-          className="h-12 w-12"
+          className="h-20 w-40 object-cover rounded-xl"
         />
       ),
       title: "Alarm Monitoring",
@@ -43,21 +43,39 @@ const Services = () => {
       link: "/services/alarm-monitoring",
     },
     {
-      icon: <Shield size={48} className="text-[#591A5D]" />,
+      icon: (
+        <img
+          src="/integerated-security.jpeg"
+          alt="Integrated Security Solutions"
+          className="h-20 w-40 object-cover rounded-xl"
+        />
+      ),
       title: "Integrated Security Solutions",
       description:
         "Seamlessly combine multiple security systems into a single, easy-to-manage platform for enhanced protection. Our integrated solutions bring together CCTV, access control, and alarm systems, offering a unified interface for comprehensive oversight and simplified management. Optimize your security posture with smart, interconnected technology.",
       link: "/services/integrated-security",
     },
     {
-      icon: <Home size={48} className="text-[#591A5D]" />,
+      icon: (
+        <img
+          src="/Smart-Home-security.jpg"
+          alt="Home Security Systems"
+          className="h-20 w-40 object-cover rounded-xl"
+        />
+      ),
       title: "Home Security Systems",
       description:
         "Safeguard your home and loved ones with tailored security solutions. Our residential systems include smart home integration, remote access, environmental sensors, and perimeter protection. Designed for modern living, they provide convenience, control, and robust defense against all forms of threats, giving you ultimate comfort and safety.",
       link: "/services/home-security",
     },
     {
-      icon: <Building size={48} className="text-[#591A5D]" />,
+      icon: (
+        <img
+          src="/commercial-security.webp"
+          alt="Commercial Security"
+          className="h-20 w-40 object-cover rounded-xl"
+        />
+      ),
       title: "Commercial Security",
       description:
         "Protect your business from theft, vandalism, and unauthorized access with our robust commercial security systems. We offer solutions ranging from advanced intrusion detection and video analytics to employee access management and inventory surveillance, all designed to secure your commercial assets and ensure business continuity.",
@@ -82,7 +100,7 @@ const Services = () => {
                     {services.map((service, index) => (
                       <div
                         key={index}
-                        className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 flex flex-col justify-between group"
+                        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 flex flex-col justify-between group"
                       >
                         <div>
                           <div className="flex justify-center mb-6">
