@@ -25,8 +25,10 @@ const Header = () => {
                 className="object-contain"
               />
               <div>
-                <span className="ml-2 text-xl font-bold text-gray-900">Eagle Securities</span>
-                <p className="ml-2 text-sm">"Your safety our servilliance"</p>
+                <span className="ml-2 text-xl font-bold text-gray-900">
+                  Eagle Securities
+                </span>
+                <p className="ml-2 text-sm">"Your safety, our servilliance"</p>
               </div>
             </Link>
           </div>
