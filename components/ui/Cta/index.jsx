@@ -19,7 +19,7 @@ export default function Cta() {
             <div className="flex items-center space-x-3">
               <Phone className="w-6 h-6 text-red-300" />
               <a href="tel:+1234567890" className="text-lg hover:underline">
-                +1 (346) 907-8448
+                +1(346) 822-6074
               </a>
             </div>
             <div className="flex items-center space-x-3">

@@ -44,14 +44,14 @@ const About = () => {
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
               Eagle Securities is a leading provider of comprehensive security
               and surveillance solutions, dedicated to safeguarding homes,
-              businesses, and communities. With years of experience in the
+              businesses, and communities With years of experience in the
               industry, we pride ourselves on our commitment to excellence.
             </p>
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
               {[
-                "Advanced CCTV",
+                "Video Surveillance",
                 "24/7 Monitoring",
                 "Access Control",
                 "Smart Integration",
@@ -80,7 +80,7 @@ const About = () => {
                     Call Directly 24/7
                   </div>
                   <div className="text-lg font-bold text-gray-900">
-                    +1(346) 907-8448
+                    +1(346) 822-6074
                   </div>
                 </div>
               </div>

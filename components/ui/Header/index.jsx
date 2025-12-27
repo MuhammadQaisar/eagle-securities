@@ -18,13 +18,16 @@ const Header = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
               <img
-                src="/eagle-securities.png"
+                src="/eagle-securities-logo.svg"
                 alt="Eagle Securities"
                 width={50}
                 height={30}
                 className="object-contain"
               />
-              <span className="ml-2 text-xl font-bold text-gray-900">Eagle Securities</span>
+              <div>
+                <span className="ml-2 text-xl font-bold text-gray-900">Eagle Securities</span>
+                <p className="ml-2 text-sm">"Your safety our servilliance"</p>
+              </div>
             </Link>
           </div>
           {/* Desktop Navigation */}
@@ -61,7 +64,7 @@ const Header = () => {
           <div className="-mr-2 flex items-center md:hidden">
             <button
               type="button"
-              className="bg-[#591A5D] rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
               aria-expanded="false"
               onClick={toggleMenu}
             >
