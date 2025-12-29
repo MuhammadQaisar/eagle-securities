@@ -48,10 +48,10 @@ const About = () => {
                 "24/7 Monitoring",
                 "Access Control",
                 "Smart Integration",
-              ].map((feature, index) => (
-                <div key={feature} className={`flex items-center gap-3 ${index % 2 === 1 ? 'justify-end' : 'justify-start'}`}>
+              ].map((feature) => (
+                <div key={feature} className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full bg-[#591A5D]"></div>
-                  <span className={`text-gray-700 font-xs ${index % 2 === 1 ? 'text-right' : 'text-left'}`}>{feature}</span>
+                  <span className="text-gray-700 font-xs">{feature}</span>
                 </div>
               ))}
             </div>
