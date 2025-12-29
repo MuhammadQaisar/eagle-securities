@@ -42,16 +42,17 @@ const About = () => {
             </p>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
+            <div className="grid grid-cols-2 gap-4 mb-8">
               {[
                 "Video Surveillance",
                 "24/7 Monitoring",
                 "Access Control",
                 "Smart Integration",
-              ].map((feature) => (
-                <div key={feature} className="flex items-center gap-3">
+              ].map((feature, index) => (
+                <div key={feature} className={`flex items-center gap-3 ${index % 2 === 1 ? 'justify-end text-right' : 'justify-start text-left'}`}>
+                  {index % 2 === 1 && <span className="text-gray-700 font-xs">{feature}</span>}
                   <div className="w-2 h-2 rounded-full bg-[#591A5D]"></div>
-                  <span className="text-gray-700 font-xs">{feature}</span>
+                  {index % 2 === 0 && <span className="text-gray-700 font-xs">{feature}</span>}
                 </div>
               ))}
             </div>
