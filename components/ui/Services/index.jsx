@@ -1,14 +1,18 @@
 import { Building } from "lucide-react";
-import Link from "next/link"; // Added Link import
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const Services = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [cardsPerSlide, setCardsPerSlide] = useState(3);
+
   const services = [
     {
       icon: (
         <img
           src="/cctv-1.jpg"
           alt="CCTV & Video Surveillance"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "CCTV & Video Surveillance",
@@ -21,7 +25,7 @@ const Services = () => {
         <img
           src="/access-control.jpeg"
           alt="Access Control Systems"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "Access Control Systems",
@@ -34,7 +38,7 @@ const Services = () => {
         <img
           src="/alarm-monitoring.jpeg"
           alt="Alarm Monitoring"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "Alarm Monitoring",
@@ -47,7 +51,7 @@ const Services = () => {
         <img
           src="/integerated-security.jpeg"
           alt="Integrated Security Solutions"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "Integrated Security Solutions",
@@ -60,7 +64,7 @@ const Services = () => {
         <img
           src="/Smart-Home-Security.jpg"
           alt="Home Security Systems"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "Home Security Systems",
@@ -73,7 +77,7 @@ const Services = () => {
         <img
           src="/commercial-security.webp"
           alt="Commercial Security"
-          className="h-20 w-40 object-cover rounded-xl"
+          className="h-40 w-80 object-cover rounded-xl"
         />
       ),
       title: "Commercial Security",
@@ -83,12 +87,50 @@ const Services = () => {
     },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setCardsPerSlide(1);
+      } else if (window.innerWidth < 1024) {
+        setCardsPerSlide(2);
+      } else {
+        setCardsPerSlide(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex(
+        (prevIndex) => (prevIndex + cardsPerSlide) % services.length
+      );
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [cardsPerSlide, services.length]);
+
+  const nextSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex + cardsPerSlide) % services.length
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - cardsPerSlide + services.length) % services.length
+    );
+  };
+
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#591A5D] mb-4">
-            Our Comprehensive Security Services
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+            Our Security Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
             Enhance your security and protect your assets with our advanced CCTV
@@ -96,28 +138,82 @@ const Services = () => {
             confidently every day.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {services.map((service, index) => (
-                      <div
-                        key={index}
-                        className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 flex flex-col justify-between group"
-                      >
-                        <div>
-                          <div className="flex justify-center mb-6">
-                            <div className="p-4 bg-[#591A5D]/5 rounded-full group-hover:bg-[#591A5D]/10 transition-colors duration-300">
-                              {service.icon}
-                            </div>
-                          </div>
-                          <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">
-                            {service.title}
-                          </h3>
-                          <p className="text-gray-600 text-center leading-relaxed mb-6">
-                            {service.description}
-                          </p>
+        <div className="relative">
+          <div className="overflow-hidden">
+            <div
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{
+                transform: `translateX(-${
+                  currentIndex * (100 / cardsPerSlide)
+                }%)`,
+              }}
+            >
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className={`flex-shrink-0 px-4 ${
+                    cardsPerSlide === 1
+                      ? "w-full"
+                      : cardsPerSlide === 2
+                      ? "w-1/2"
+                      : "w-1/3"
+                  }`}
+                >
+                  <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 flex flex-col justify-between group">
+                    <div>
+                      <div className="flex justify-center mb-6">
+                        <div className="p-4  rounded-full transition-colors duration-300">
+                          {service.icon}
                         </div>
                       </div>
-                    ))}
-                  </div>      </div>
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">
+                        {service.title}
+                      </h3>
+                      <p className="text-gray-600 text-center leading-relaxed mb-6">
+                        {service.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Navigation Buttons */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#591A5D] text-white px-4 py-2  rounded-full hover:bg-[#4a154d] transition-colors"
+            aria-label="Previous service"
+          >
+            ❮
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#591A5D] text-white px-4 py-2  rounded-full hover:bg-[#4a154d] transition-colors"
+            aria-label="Next service"
+          >
+            ❯
+          </button>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-2 mt-8">
+            {Array.from({
+              length: Math.ceil(services.length / cardsPerSlide),
+            }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index * cardsPerSlide)}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  Math.floor(currentIndex / cardsPerSlide) === index
+                    ? "bg-[#591A5D]"
+                    : "bg-gray-300"
+                }`}
+                aria-label={`Go to service group ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

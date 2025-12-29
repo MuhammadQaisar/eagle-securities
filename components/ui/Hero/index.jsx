@@ -13,7 +13,7 @@ const Hero = () => {
           alt="Security Surveillance Background"
           className="w-full h-full object-cover opacity-30 h-64 sm:h-full object-top"
         />
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#591A5D] via-[#591A5D]/70 to-transparent opacity-80"></div>
       </div>
 
       <div className="relative z-40 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
@@ -42,11 +42,11 @@ const Hero = () => {
       <div className="relative mx-auto mt-8 sm:mt-12 lg:absolute lg:left-28 lg:bottom-[-3rem] z-30 max-w-4xl">
         <div className="w-full bg-white text-gray-800 rounded-3xl shadow-2xl py-4 px-6 flex flex-col sm:flex-row sm:justify-between items-center sm:items-stretch gap-4 sm:gap-0">
           <div className="flex-1 px-6 flex flex-col items-center gap-2">
-            <div className="w-12 h-12 flex-shrink-0 rounded-full bg-[#591A5D]/10 flex items-center justify-center">
+            <div className="w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center">
               <img
                 src="/always-hours.svg"
                 alt="24/7 Security"
-                className="w-7 h-7"
+                className="w-17 h-17"
               />
             </div>
             <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
@@ -57,24 +57,24 @@ const Hero = () => {
           </div>
 
           <div className="flex-1 px-6 flex flex-col items-center gap-2">
-            <div className="w-12 h-12 flex-shrink-0 rounded-full bg-[#591A5D]/10 flex items-center justify-center">
+            <div className="w-12 h-12 flex-shrink-0 rounded-full  flex items-center justify-center">
               <img
                 src="/finger-print.svg"
                 alt="Advanced Surveillance Technology"
-                className="w-7 h-7"
+                className="w-17 h-17"
               />
             </div>
             <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
-              Advanced Surveillance 
+              Advanced Surveillance
             </h3>
           </div>
 
           <div className="flex-1 px-6 flex flex-col items-center gap-2">
-            <div className="w-12 h-12 flex-shrink-0 rounded-full bg-[#591A5D]/10 flex items-center justify-center">
+            <div className="w-12 h-12 flex-shrink-0 rounded-full flex items-center justify-center">
               <img
                 src="/certified-professional.svg"
                 alt="Trusted & Trained Professionals"
-                className="w-7 h-7"
+                className="w-17 h-17"
               />
             </div>
             <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">

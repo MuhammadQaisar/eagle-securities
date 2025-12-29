@@ -17,13 +17,21 @@ export default function Cta() {
 
           <div className="flex flex-col sm:flex-row gap-6 mb-8">
             <div className="flex items-center space-x-3">
-              <Phone className="w-6 h-6 text-red-300" />
+              <img
+                src="/telephone-svgrepo-com.svg"
+                alt="Phone"
+                className="w-6 h-6 brightness-0 invert"
+              />
               <a href="tel:+1234567890" className="text-lg hover:underline">
                 +1(346) 822-6074
               </a>
             </div>
             <div className="flex items-center space-x-3">
-              <Mail className="w-6 h-6 text-red-300" />
+              <img
+                src="/email-9-svgrepo-com.svg"
+                alt="Email"
+                className="w-6 h-6 brightness-0 invert"
+              />
               <a
                 href="mailto:info@eaglesecurities.com"
                 className="text-lg hover:underline"

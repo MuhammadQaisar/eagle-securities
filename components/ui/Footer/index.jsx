@@ -3,8 +3,19 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-900">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <footer
+      className="relative bg-zinc-900 overflow-hidden"
+      style={{
+        backgroundImage: `
+          linear-gradient(45deg, transparent 25%, rgba(89, 26, 93, 0.15) 25%, rgba(89, 26, 93, 0.15) 50%, transparent 50%, transparent 75%, rgba(89, 26, 93, 0.15) 75%),
+          linear-gradient(-45deg, transparent 25%, rgba(123, 44, 191, 0.15) 25%, rgba(123, 44, 191, 0.15) 50%, transparent 50%, transparent 75%, rgba(123, 44, 191, 0.15) 75%)
+        `,
+        backgroundSize: "60px 60px",
+        backgroundPosition: "0 0, 30px 30px",
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-zinc-900 via-zinc-900/95 to-zinc-900 pointer-events-none"></div>
+      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
@@ -24,17 +35,26 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/services" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/services"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       CCTV
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/services"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Access Control
                     </Link>
                   </li>
                   <li>
-                    <Link href="/services" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/services"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Alarm Monitoring
                     </Link>
                   </li>
@@ -46,12 +66,18 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/contact" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/contact"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Contact
                     </Link>
                   </li>
                   <li>
-                    <Link href="/faqs" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/faqs"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       FAQs
                     </Link>
                   </li>
@@ -65,17 +91,26 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/about" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/about"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       About
                     </Link>
                   </li>
                   <li>
-                    <Link href="/blog" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/blog"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Blog
                     </Link>
                   </li>
                   <li>
-                    <Link href="/jobs" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/jobs"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Jobs
                     </Link>
                   </li>
@@ -87,12 +122,18 @@ const Footer = () => {
                 </h3>
                 <ul className="mt-4 space-y-4">
                   <li>
-                    <Link href="/privacy" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/privacy"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Privacy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/terms" className="text-base text-gray-300 hover:text-white">
+                    <Link
+                      href="/terms"
+                      className="text-base text-gray-300 hover:text-white"
+                    >
                       Terms
                     </Link>
                   </li>
@@ -103,7 +144,8 @@ const Footer = () => {
         </div>
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-base text-gray-400 xl:text-center">
-            &copy; {new Date().getFullYear()} Eagle Securities, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Eagle Securities, Inc. All rights
+            reserved.
           </p>
         </div>
       </div>

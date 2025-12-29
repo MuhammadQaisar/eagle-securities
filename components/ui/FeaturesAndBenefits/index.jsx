@@ -45,13 +45,13 @@ const FeaturesAndBenefits = () => {
             "With over 15 years of experience, we have the knowledge and expertise to handle all your security needs.",
         },
         {
-          icon: "/certified-professional.svg",
+          icon: "/license-svgrepo-com.svg",
           title: "Licensed & Certified",
           description:
             "Our team of professionals are licensed and certified to provide you with the best security services.",
         },
         {
-          icon: "/always-hours.svg",
+          icon: "/support-svgrepo-com.svg",
           title: "24/7 Support",
           description:
             "We are available 24/7 to provide you with the support you need, when you need it.",
@@ -69,16 +69,18 @@ const FeaturesAndBenefits = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+            Features and Benefits
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Discover the advanced capabilities that set our security solutions
+            apart. We combine decades of experience with cutting-edge technology
+            to deliver security solutions you can trust implicitly.
+          </p>
+        </div>
         {sections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="mb-16 last:mb-0">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
-                {section.title}
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-                {section.description}
-              </p>
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {section.items.map((item, itemIndex) => (
                 <div
@@ -90,7 +92,7 @@ const FeaturesAndBenefits = () => {
                       <img
                         src={item.icon}
                         alt={item.title}
-                        className="w-12 h-12 filter invert"
+                        className="w-12 h-12 brightness-0 invert"
                       />
                     </div>
                   </div>
