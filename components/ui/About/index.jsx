@@ -1,26 +1,18 @@
 const About = () => {
   return (
     <section className="relative mt-20 py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 overflow-hidden">
-      {/* Digital Security Background Pattern */}
+      {/* Digital Security Background Pattern (grid removed) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(#591A5D 1px, transparent 1px), linear-gradient(90deg, #591A5D 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-          }}
-        />
-        {/* Subtle Tech Glow */}
+        {/* Removed repeating grid background to eliminate background grid lines */}
         <div className="absolute right-0 top-0 -translate-y-1/4 translate-x-1/4 w-96 h-96 bg-[#591A5D] opacity-[0.03] blur-3xl rounded-full"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="lg:w-1/2 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <div className="rounded-4xl relative overflow-hidden shadow-xl">
               <img
-                src="/about-image3.png"
+                src="/security-camera.avif"
                 alt="About Eagle Securities"
                 className="w-full h-full object-cover object-center"
               />
@@ -35,11 +27,9 @@ const About = () => {
           </div>
 
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2">
+            <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2"></h4>
+            <h2 className="text-2xl sm:text-2xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
               Who We Are
-            </h4>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
-              About Us
             </h2>
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
               Eagle Securities is a leading provider of comprehensive security
@@ -70,7 +60,7 @@ const About = () => {
             </p>
 
             {/* Contact Card */}
-            <div className="bg-white rounded-xl p-4 sm:p-6 border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div className=" p-4 sm:p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full bg-[#591A5D] text-[#591A5D]">
                   <img src="/phone.svg" alt="Phone" className="h-6 w-6" />
@@ -79,7 +69,7 @@ const About = () => {
                   <div className="text-sm text-gray-500 font-medium">
                     Call Directly 24/7
                   </div>
-                  <div className="text-lg font-bold text-gray-900">
+                  <div className="text-lg font-bold text-[#591A5D]">
                     +1(346) 822-6074
                   </div>
                 </div>

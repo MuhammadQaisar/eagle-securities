@@ -1,11 +1,9 @@
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import Hero from "../../components/ui/Hero";
 import About from "../../components/ui/About";
 import Services from "../../components/ui/Services";
 import WhatWeDo from "../../components/ui/WhatWeDo";
-import Features from "../../components/ui/Features";
-import WhyChooseUs from "../../components/ui/WhyChooseUs";
+import FeaturesAndBenefits from "../../components/ui/FeaturesAndBenefits"; // Import the combined component
 import Testimonials from "../../components/ui/Testimonials";
 import Faqs from "../../components/ui/Faqs";
 import Cta from "../../components/ui/Cta"; // Import the new Cta component
@@ -29,8 +27,7 @@ export default function Home() {
       <About />
       <Services />
       <WhatWeDo />
-      <Features />
-      <WhyChooseUs />
+      <FeaturesAndBenefits /> {/* Use the combined component */}
       <Testimonials />
       <Faqs />
       <Cta /> {/* Render the Cta component here */}
