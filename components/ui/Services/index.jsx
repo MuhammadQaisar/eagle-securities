@@ -166,10 +166,10 @@ const Services = () => {
                           {service.icon}
                         </div>
                       </div>
-                      <h3 className="text-xl font-bold mb-3 text-gray-900 text-center">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 text-left">
                         {service.title}
                       </h3>
-                      <p className="text-gray-600 text-center leading-relaxed mb-6">
+                      <p className="text-gray-600 text-left leading-relaxed mb-6">
                         {service.description}
                       </p>
                     </div>
