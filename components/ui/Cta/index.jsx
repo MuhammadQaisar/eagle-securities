@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -41,9 +42,12 @@ export default function Cta() {
             </div>
           </div>
 
-          <button className="bg-white text-[#591A5D] hover:bg-red-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+          <Link
+            href="/contact"
+            className="bg-white text-[#591A5D] hover:bg-red-100 font-bold py-3 px-8 rounded-full text-lg transition duration-300"
+          >
             Get a Free Quote
-          </button>
+          </Link>
         </div>
       </div>
 
