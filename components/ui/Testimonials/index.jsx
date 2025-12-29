@@ -31,7 +31,7 @@ const Testimonials = () => {
             What Our Clients Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Don't just take our word for it. Here is what our satisfied clients
+            Don&apos;t just take our word for it. Here is what our satisfied clients
             have to say about our security services.
           </p>
         </div>
@@ -46,7 +46,7 @@ const Testimonials = () => {
               </div>
               <div className="relative z-10">
                 <p className="text-gray-600 italic mb-6 leading-relaxed">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
                 <div>
                   <p className="text-gray-900 font-bold text-lg">

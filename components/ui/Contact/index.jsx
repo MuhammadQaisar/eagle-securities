@@ -10,7 +10,7 @@ const Contact = () => {
             Contact Us
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            We're here to help and answer any question you might have. We look
+            We&apos;re here to help and answer any question you might have. We look
             forward to hearing from you.
           </p>
         </div>

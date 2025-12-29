@@ -28,7 +28,7 @@ const Header = () => {
                 <span className="ml-2 text-xl font-bold text-gray-900">
                   Eagle Securities
                 </span>
-                <p className="ml-2 text-sm">"Your safety, our servilliance"</p>
+                <p className="ml-2 text-sm">&quot;Your safety, our servilliance&quot;</p>
               </div>
             </Link>
           </div>
