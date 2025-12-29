@@ -30,7 +30,7 @@ const About = () => {
 
           <div className="lg:w-1/2 text-center lg:text-left">
             <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2"></h4>
-            <h2 className="text-3xl md:text-2xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
+            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
               Who We Are
             </h2>
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
