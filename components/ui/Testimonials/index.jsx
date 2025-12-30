@@ -52,7 +52,7 @@ const Testimonials = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#7b2cbf] text-transparent bg-clip-text">
             What Our Clients Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -71,7 +71,7 @@ const Testimonials = () => {
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="w-full flex-shrink-0 px-4">
                   <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 relative mx-auto max-w-2xl">
-                    <div className="absolute top-6 right-8 text-[#591A5D]/10">
+                    <div className="absolute top-6 right-8 text-[#000080]/10">
                       <Quote size={48} />
                     </div>
                     <div className="relative z-10">
@@ -82,7 +82,7 @@ const Testimonials = () => {
                         <p className="text-gray-900 font-bold text-lg">
                           {testimonial.author}
                         </p>
-                        <p className="text-[#591A5D] font-medium">
+                        <p className="text-[#000080] font-medium">
                           {testimonial.company}
                         </p>
                       </div>
@@ -96,14 +96,14 @@ const Testimonials = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#591A5D] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#000080] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Previous testimonial"
           >
             ❮
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#591A5D] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#000080] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Next testimonial"
           >
             ❯
@@ -116,7 +116,7 @@ const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-[#591A5D]" : "bg-gray-300"
+                  index === currentIndex ? "bg-[#000080]" : "bg-gray-300"
                 }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

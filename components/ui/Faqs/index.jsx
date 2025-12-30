@@ -24,7 +24,7 @@ const Faqs = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#7b2cbf] text-transparent bg-clip-text">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -38,7 +38,7 @@ const Faqs = () => {
               key={index}
               className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 relative"
             >
-              <div className="absolute top-6 right-8 text-[#591A5D]/10">
+              <div className="absolute top-6 right-8 text-[#000080]/10">
                 <HelpCircle size={48} />
               </div>
               <div className="relative z-10">

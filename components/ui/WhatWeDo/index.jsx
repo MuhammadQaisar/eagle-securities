@@ -6,7 +6,7 @@ export default function WhatWeDo() {
     <div>
       <section
         id="about"
-        className="relative py-20 px-4 text-white overflow-hidden bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]"
+        className="relative py-20 px-4 text-white overflow-hidden bg-gradient-to-r from-[#000080] to-[#7b2cbf]"
       >
         <div className="relative max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -46,14 +46,14 @@ export default function WhatWeDo() {
             <div className="relative">
               <div className="absolute inset-0 bg-white/10 rounded-3xl filter blur-3xl"></div>
               <div className="relative bg-white rounded-3xl p-10 shadow-2xl hover:shadow-3xl transition-shadow duration-300">
-                <div className="w-fit p-4 rounded-full mb-6 bg-[#591A5D]/10">
+                <div className="w-fit p-4 rounded-full mb-6 bg-[#000080]/10">
                   <img
                     src="/trtl-svgrepo-com.svg"
                     alt="Mission Icon"
                     className="w-12 h-12"
                   />
                 </div>
-                <h3 className="text-3xl font-bold mb-4 text-[#591A5D]">
+                <h3 className="text-3xl font-bold mb-4 text-[#000080]">
                   Our Mission
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">

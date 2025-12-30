@@ -1,123 +1,150 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Only Menu and X for hamburger, original button was not lucide icon
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const hasBeenShown = localStorage.getItem('newYearDealShown');
+    if (!hasBeenShown) {
+        setShowPopup(true);
+    }
+  }, []);
+
+  const handleClosePopup = () => {
+      localStorage.setItem('newYearDealShown', 'true');
+      setShowPopup(false);
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 md:py-6">
-          {" "}
-          {/* Adjusted py for mobile */}
-          <div className="flex justify-start lg:w-0 lg:flex-1">
-            <Link href="/" className="flex items-center">
-              <img
-                src="/eagle-securities-logo.svg"
-                alt="Eagle Securities"
-                width={50}
-                height={30}
-                className="object-contain"
-              />
-              <div>
-                <span className="ml-2 text-xl font-bold text-gray-900">
-                  Eagle Securities
-                </span>
-                <p className="ml-2 text-sm">&quot;Your safety, our servilliance&quot;</p>
-              </div>
-            </Link>
-          </div>
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-10">
-            <Link
-              href="/about"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Services
-            </Link>
-            <Link
-              href="/contact"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Contact
-            </Link>
-          </nav>
-          <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            {/* Original CTA button */}
-            <Link
-              href="/contact"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
-            >
-              Schedule a Call
-            </Link>
-          </div>
-          {/* Mobile menu button */}
-          <div className="-mr-2 flex items-center md:hidden">
-            <button
-              type="button"
-              className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
-              aria-expanded="false"
-              onClick={toggleMenu}
-            >
-              <span className="sr-only">Open main menu</span>
-              {isOpen ? (
-                <X className="block h-6 w-6" aria-hidden="true" />
-              ) : (
-                <Menu className="block h-6 w-6" aria-hidden="true" />
-              )}
-            </button>
+    <>
+      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4 md:py-6">
+            {" "}
+            {/* Adjusted py for mobile */}
+            <div className="flex justify-start lg:w-0 lg:flex-1">
+              <Link href="/" className="flex items-center">
+                <img
+                  src="/eagle-securities.png"
+                  alt="Eagle Securities"
+                  width={1600}
+                  height={180}
+                  className="object-contain w-20 h-20"
+                />
+                <div>
+                  <span className="ml-2 text-xl font-bold text-[#000080]">
+                                    Eagle Securities
+                                  </span>
+                  <p className="ml-2 text-sm">&quot;Your Safety, Our Surveillance&quot;</p>
+                </div>
+              </Link>
+            </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-10">
+              <Link
+                href="/about"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                About
+              </Link>
+              <Link
+                href="/services"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Services
+              </Link>
+              <Link
+                href="/contact"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+              >
+                Contact
+              </Link>
+            </nav>
+            <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+              {/* Original CTA button */}
+              <Link
+                href="/contact"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600"
+              >
+                Schedule a Call
+              </Link>
+            </div>
+            {/* Mobile menu button */}
+            <div className="-mr-2 flex items-center md:hidden">
+              <button
+                type="button"
+                className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600"
+                aria-expanded="false"
+                onClick={toggleMenu}
+              >
+                <span className="sr-only">Open main menu</span>
+                {isOpen ? (
+                  <X className="block h-6 w-6" aria-hidden="true" />
+                ) : (
+                  <Menu className="block h-6 w-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Mobile Menu (conditionally rendered) */}
-      {isOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              href="/about"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
-              onClick={toggleMenu}
-            >
-              About
-            </Link>
-            <Link
-              href="/services"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
-              onClick={toggleMenu}
-            >
-              Services
-            </Link>
-            <Link
-              href="/contact"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
-              onClick={toggleMenu}
-            >
-              Contact
-            </Link>
-            {/* Mobile CTA button - replicating the desktop button's text and link */}
-            <Link
-              href="/contact"
-              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] w-full"
-              onClick={toggleMenu}
-            >
-              Schedule a Call
-            </Link>
+        {/* Mobile Menu (conditionally rendered) */}
+        {isOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <Link
+                href="/about"
+                className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={toggleMenu}
+              >
+                About
+              </Link>
+              <Link
+                href="/services"
+                className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={toggleMenu}
+              >
+                Services
+              </Link>
+              <Link
+                href="/contact"
+                className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+                onClick={toggleMenu}
+              >
+                Contact
+              </Link>
+              {/* Mobile CTA button - replicating the desktop button's text and link */}
+              <Link
+                href="/contact"
+                className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-gray-900 to-gray-700 hover:from-gray-800 hover:to-gray-600 w-full"
+                onClick={toggleMenu}
+              >
+                Schedule a Call
+              </Link>
+            </div>
           </div>
+        )}
+      </header>
+      {showPopup && (
+        <div className="fixed bottom-5 right-5 bg-gradient-to-br from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-2xl max-w-sm w-full z-[100] border-2 border-gray-700">
+            <button onClick={handleClosePopup} className="absolute top-2 right-2 text-gray-400 hover:text-white">
+                <X size={24} />
+            </button>
+            <div className="text-center">
+                <h3 className="text-2xl font-bold mb-2">✨ New Year Deal ✨</h3>
+                <p className="text-lg text-gray-300">25 Dec 2025 – 10 Jan 2026</p>
+                <p className="text-xl font-semibold mt-4">Services starting from <span className="text-green-400">$299</span></p>
+            </div>
         </div>
       )}
-    </header>
+    </>
   );
 };
 
