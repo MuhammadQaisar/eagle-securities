@@ -18,14 +18,14 @@ const Header = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
               <img
-                src="/eagle-securities-logo.svg"
+                src="/es-logo.svg"
                 alt="Eagle Securities"
-                width={50}
-                height={30}
+                width={100}
+                height={100}
                 className="object-contain"
               />
               <div>
-                <span className="ml-2 text-xl font-bold text-gray-900">
+                <span className="ml-2 text-2xl font-bold text-[#000080]">
                   Eagle Securities
                 </span>
                 <p className="ml-2 text-sm">
