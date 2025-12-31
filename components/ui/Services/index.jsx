@@ -129,11 +129,7 @@ const Services = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-<<<<<<< HEAD
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#003399] text-transparent bg-clip-text">
-=======
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#7b2cbf] text-transparent bg-clip-text">
->>>>>>> 70dd3375398967048569e307e1f5205fec4a1e02
             Our Security Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">

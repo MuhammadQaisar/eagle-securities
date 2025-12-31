@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Only Menu and X for hamburger, original button was not lucide icon
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showPopup, setShowPopup] = useState(false);
-
-  useEffect(() => {
-    const hasBeenShown = localStorage.getItem('newYearDealShown');
-    if (!hasBeenShown) {
-        setShowPopup(true);
-    }
-  }, []);
-
-  const handleClosePopup = () => {
-      localStorage.setItem('newYearDealShown', 'true');
-      setShowPopup(false);
-  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -41,7 +28,9 @@ const Header = () => {
                 <span className="ml-2 text-xl font-bold text-gray-900">
                   Eagle Securities
                 </span>
-                <p className="ml-2 text-sm">&quot;Your safety, our servilliance&quot;</p>
+                <p className="ml-2 text-sm">
+                  &quot;Your safety, our servilliance&quot;
+                </p>
               </div>
             </Link>
           </div>

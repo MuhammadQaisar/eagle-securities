@@ -5,11 +5,7 @@ import Link from "next/link";
 
 export default function Cta() {
   return (
-<<<<<<< HEAD
     <section className="relative text-white py-20 bg-gradient-to-r from-[#000080] to-[#003399]">
-=======
-    <section className="relative text-white py-20 bg-gradient-to-r from-[#000080] to-[#7b2cbf]">
->>>>>>> 70dd3375398967048569e307e1f5205fec4a1e02
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-xl">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">

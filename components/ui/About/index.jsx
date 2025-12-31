@@ -30,13 +30,8 @@ const About = () => {
           </div>
 
           <div className="lg:w-1/2 text-left">
-<<<<<<< HEAD
-            <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2"></h4>
-            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-[#003399]">
-=======
             <h4 className="text-[#000080] font-semibold uppercase tracking-widest text-sm mb-2"></h4>
-            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-[#7b2cbf]">
->>>>>>> 70dd3375398967048569e307e1f5205fec4a1e02
+            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-[#003399]">
               About Us
             </h2>
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
@@ -88,11 +83,7 @@ const About = () => {
               </div>
               <Link
                 href="/contact"
-<<<<<<< HEAD
-                className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#4a154d] hover:to-[#6a1e9e] text-white"
-=======
-                className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#000080] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] text-white"
->>>>>>> 70dd3375398967048569e307e1f5205fec4a1e02
+                className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266] text-white"
               >
                 Contact Us
                 <ArrowRight className="h-4 w-4" />
