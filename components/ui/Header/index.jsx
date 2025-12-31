@@ -25,10 +25,13 @@ const Header = () => {
                 className="object-contain"
               />
               <div>
-                <span className="ml-2 text-2xl font-bold text-[#000080]">
-                  Eagle Securities
+                <span
+                  className="ml-2 text-xl font-bold text-[#000080]"
+                  style={{ fontFamily: "Montserrat" }}
+                >
+                  EAGLE SECURITIES
                 </span>
-                <p className="ml-2 text-sm">
+                <p className="ml-3 text-sm">
                   &quot;Your safety, our servilliance&quot;
                 </p>
               </div>
