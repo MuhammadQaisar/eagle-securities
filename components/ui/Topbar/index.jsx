@@ -2,7 +2,11 @@ import React from "react";
 
 const Topbar = () => {
   return (
+<<<<<<< HEAD
     <div className="bg-gradient-to-r from-[#000080] to-[#003399] text-white text-center py-2 px-4 sm:px-6 lg:px-8">
+=======
+    <div className="bg-gradient-to-r from-[#000080] to-[#7b2cbf] text-white text-center py-2 px-4 sm:px-6 lg:px-8">
+>>>>>>> 70dd3375398967048569e307e1f5205fec4a1e02
       <div className="overflow-hidden w-full">
         <p className="text-sm font-extralight animate-marquee">
           24/7 Live CCTV Monitoring to Prevent Theft, Boost Safety & Improve Efficiency
