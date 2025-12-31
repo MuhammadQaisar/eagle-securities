@@ -52,7 +52,7 @@ const Testimonials = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#003399] text-transparent bg-clip-text">
             What Our Clients Say
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -96,14 +96,14 @@ const Testimonials = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#591A5D] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#000080] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Previous testimonial"
           >
             ❮
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#591A5D] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#000080] text-white px-4 py-2 rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Next testimonial"
           >
             ❯

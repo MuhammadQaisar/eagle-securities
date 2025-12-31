@@ -6,7 +6,7 @@ const Contact = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#000080] to-[#003399] text-transparent bg-clip-text">
             Contact Us
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
@@ -139,7 +139,7 @@ const Contact = () => {
               <div className="col-span-1 text-left">
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#591A5D]"
+                  className="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#4a154d] hover:to-[#6a1e9e] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#591A5D]"
                 >
                   Send Message
                 </button>

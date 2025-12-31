@@ -53,7 +53,7 @@ export default function WhatWeDo() {
                     className="w-12 h-12"
                   />
                 </div>
-                <h3 className="text-3xl font-bold mb-4 text-[#591A5D]">
+                <h3 className="text-3xl font-bold mb-4 text-[#000080]">
                   Our Mission
                 </h3>
                 <p className="text-gray-700 text-lg leading-relaxed">

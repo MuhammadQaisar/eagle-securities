@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
+    <header className="top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4 md:py-6">
           {" "}
@@ -18,17 +18,19 @@ const Header = () => {
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
               <img
-                src="/eagle-securities-logo.svg"
+                src="/es-logo.svg"
                 alt="Eagle Securities"
-                width={50}
-                height={30}
-                className="object-contain"
+                width={100}
+                height={100}
+                className="object-contain w-25 h-25 rounded-full"
               />
               <div>
-                <span className="ml-2 text-xl font-bold text-gray-900">
+                <span className="ml-2 text-2xl font-bold text-[#000080]">
                   Eagle Securities
                 </span>
-                <p className="ml-2 text-sm">&quot;Your safety, our servilliance&quot;</p>
+                <p className="ml-2 text-sm text-gray-800">
+                  &quot;Your safety, our servilliance&quot;
+                </p>
               </div>
             </Link>
           </div>
@@ -36,19 +38,19 @@ const Header = () => {
           <nav className="hidden md:flex space-x-10">
             <Link
               href="/about"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base font-medium text-gray-600 hover:text-gray-900"
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base font-medium text-gray-600 hover:text-gray-900"
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="text-base font-medium text-gray-500 hover:text-gray-900"
+              className="text-base font-medium text-gray-600 hover:text-gray-900"
             >
               Contact
             </Link>
@@ -57,7 +59,7 @@ const Header = () => {
             {/* Original CTA button */}
             <Link
               href="/contact"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-[#FFFFFF] bg-gradient-to-r from-[#000080] to-[#003399] hover:bg-gray-100"
             >
               Schedule a Call
             </Link>
@@ -66,7 +68,7 @@ const Header = () => {
           <div className="-mr-2 flex items-center md:hidden">
             <button
               type="button"
-              className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
+              className="rounded-md p-2 inline-flex items-center justify-center text-[#000080] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#000080] hover:bg-gray-100"
               aria-expanded="false"
               onClick={toggleMenu}
             >
@@ -87,21 +89,21 @@ const Header = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               href="/about"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-900 hover:bg-white/10 block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
               About
             </Link>
             <Link
               href="/services"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-900 hover:bg-white/10 block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
               Services
             </Link>
             <Link
               href="/contact"
-              className="text-gray-900 hover:bg-gray-50 block px-3 py-2 rounded-md text-base font-medium"
+              className="text-gray-900 hover:bg-white/10 block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleMenu}
             >
               Contact
@@ -109,7 +111,7 @@ const Header = () => {
             {/* Mobile CTA button - replicating the desktop button's text and link */}
             <Link
               href="/contact"
-              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] w-full"
+              className="mt-4 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-[#FFFFFF] bg-gradient-to-r from-[#000080] to-[#003399] hover:bg-gray-100 w-full"
               onClick={toggleMenu}
             >
               Schedule a Call

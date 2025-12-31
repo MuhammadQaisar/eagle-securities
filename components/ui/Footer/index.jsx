@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="space-y-8 xl:col-span-1">
             <img
               className="h-16 rounded"
-              src="/eagle-securities.png"
+              src="/es-logo.svg"
               alt="Eagle Securities"
             />
             <p className="text-gray-400 text-base">

@@ -3,7 +3,7 @@ const Hero = () => {
     <section
       className="relative text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
       style={{
-        backgroundColor: "#591A5D",
+        backgroundColor: "#000080",
         fontFamily: "'Urbanist', sans-serif",
       }}
     >
@@ -30,7 +30,7 @@ const Hero = () => {
           <div className="mt-8 flex justify-center lg:justify-start">
             <a
               href="#"
-              className="inline-block text-white-900 font-normal py-3 px-8 rounded bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] transition duration-300"
+              className="inline-block text-white-900 font-normal py-3 px-8 rounded bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#4a154d] hover:to-[#6a1e9e] transition duration-300"
             >
               Get a Free Quote
             </a>
@@ -49,7 +49,7 @@ const Hero = () => {
                 className="w-17 h-17"
               />
             </div>
-            <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
+            <h3 className="font-bold text-center text-sm tracking-wide text-[#000080]">
               24/7 Security
               <br />
               Protection
@@ -64,7 +64,7 @@ const Hero = () => {
                 className="w-17 h-17"
               />
             </div>
-            <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
+            <h3 className="font-bold text-center text-sm tracking-wide text-[#000080]">
               Advanced Surveillance
             </h3>
           </div>
@@ -77,7 +77,7 @@ const Hero = () => {
                 className="w-17 h-17"
               />
             </div>
-            <h3 className="font-bold text-center text-sm tracking-wide text-[#591A5D]">
+            <h3 className="font-bold text-center text-sm tracking-wide text-[#000080]">
               Trusted & Trained
               <br />
               Professionals

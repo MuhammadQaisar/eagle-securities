@@ -70,7 +70,7 @@ const FeaturesAndBenefits = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] text-transparent bg-clip-text">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-[#000080] to-[#003399] text-transparent bg-clip-text">
             Features and Benefits
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -85,7 +85,7 @@ const FeaturesAndBenefits = () => {
               {section.items.map((item, itemIndex) => (
                 <div
                   key={itemIndex}
-                  className="bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group"
+                  className="bg-gradient-to-r from-[#000080] to-[#003399] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group"
                 >
                   <div className="flex justify-center mb-6">
                     <div className="p-4 bg-white/10 rounded-full group-hover:bg-white/20 transition-colors duration-300">

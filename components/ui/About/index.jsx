@@ -31,7 +31,7 @@ const About = () => {
 
           <div className="lg:w-1/2 text-left">
             <h4 className="text-[#591A5D] font-semibold uppercase tracking-widest text-sm mb-2"></h4>
-            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#591A5D] to-[#7b2cbf]">
+            <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-[#003399]">
               About Us
             </h2>
             <p className="text-md text-gray-600 mb-6 leading-relaxed">
@@ -76,14 +76,14 @@ const About = () => {
                   <div className="text-sm text-gray-500 font-medium">
                     Call Directly 24/7
                   </div>
-                  <div className="text-lg font-bold text-[#591A5D]">
+                  <div className="text-lg font-bold text-[#000080]">
                     +1(346) 822-6074
                   </div>
                 </div>
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] text-white"
+                className="inline-flex items-center gap-2 px-10 py-3 rounded-full shadow transition-colors bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#4a154d] hover:to-[#6a1e9e] text-white"
               >
                 Contact Us
                 <ArrowRight className="h-4 w-4" />
