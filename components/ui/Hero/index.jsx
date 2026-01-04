@@ -147,7 +147,7 @@ const Hero = () => {
                     </svg>
                   </div>
                   <h3 className="font-bold text-center text-sm tracking-wide text-eagle-blue">
-                    Trusted & Trained
+                    Trusted &amp; Trained
                     <br />
                     Professionals
                   </h3>
