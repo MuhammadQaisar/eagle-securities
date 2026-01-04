@@ -6,10 +6,30 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 const heroSlides = [
-  { src: "/hero-image.png", alt: "Security Surveillance Background 1" },
-  { src: "/security-camera.avif", alt: "Security Surveillance Background 2" },
-  { src: "/Smart-Home-Security.jpg", alt: "Smart Home Security Background" },
-  { src: "/commercial-security.webp", alt: "Commercial Security Background" },
+  {
+    src: "/hero-image.png",
+    alt: "Security Surveillance Background 1",
+    title: "Your Trusted Partner in Security & Surveillance",
+    description: "Protecting what matters most with cutting-edge technology and unwavering vigilance. Experience peace of mind with Eagle Securities."
+  },
+  {
+    src: "/security-camera.avif",
+    alt: "Store Security Camera",
+    title: "No room for Theft in your store",
+    description: "Our advanced surveillance systems provide vigilant monitoring, deterring theft and ensuring the safety of your merchandise and premises around the clock."
+  },
+  {
+    src: "/Smart-Home-Security.jpg",
+    alt: "Smart Home Security Background",
+    title: "Smart Home, Smarter Security",
+    description: "Integrate seamlessly with smart home devices for complete control and automation of your home's security from anywhere."
+  },
+  {
+    src: "/commercial-security.webp",
+    alt: "Commercial Security Background",
+    title: "Robust Solutions for Business Protection",
+    description: "Tailored security systems designed to protect your commercial assets, employees, and customers from all threats."
+  },
 ];
 
 const Hero = () => {
@@ -45,32 +65,38 @@ const Hero = () => {
                 className="w-full h-full object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#000080] via-[#000080]/70 to-transparent opacity-80"></div>
+              {/* Dynamic content overlay for each slide */}
+              <div className="absolute inset-0 z-10 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
+                <div className="lg:w-1/2 text-center lg:text-left">
+                  <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6 animate-fade-in-up">
+                    {slide.title.includes('Security & Surveillance') ? (
+                      <>
+                        Your Trusted Partner in{" "}
+                        <span className="text-[#a8dadc]">Security & Surveillance</span>
+                      </>
+                    ) : (
+                      slide.title
+                    )}
+                  </h1>
+                  <p className="text-lg sm:text-xl mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+                    {slide.description}
+                  </p>
+                  <div className="mt-8 flex justify-center lg:justify-start">
+                    <a
+                      href="#"
+                      className="inline-block text-white font-normal py-3 px-8 rounded bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266] transition duration-300"
+                    >
+                      Get a Free Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      <div className="relative z-40 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
-        <div className="lg:w-1/2 text-center lg:text-left">
-          <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6 animate-fade-in-up">
-            Your Trusted Partner in{" "}
-            <span className="text-[#a8dadc]">Security & Surveillance</span>
-          </h1>
-          <p className="text-lg sm:text-xl mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
-            Protecting what matters most with cutting-edge technology and
-            unwavering vigilance. Experience peace of mind with Eagle
-            Securities.
-          </p>
-          <div className="mt-8 flex justify-center lg:justify-start">
-            <a
-              href="#"
-              className="inline-block text-white font-normal py-3 px-8 rounded bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266] transition duration-300"
-            >
-              Get a Free Quote
-            </a>
-          </div>
-        </div>
-      </div>
+
 
       {/* Bottom-left feature card */}
       <div className="relative mx-auto mt-8 sm:mt-12 lg:absolute lg:left-28 lg:bottom-[-3rem] z-30 max-w-4xl">
