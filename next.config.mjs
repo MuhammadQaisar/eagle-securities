@@ -2,6 +2,7 @@
 const nextConfig = {
   /* config options here */
   reactStrictMode: true,
+  allowedDevOrigins: ['http://192.168.100.10:3000'], // Added to suppress CORS warning
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,
