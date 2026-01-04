@@ -63,13 +63,13 @@ const About = () => {
             </p>
 
             {/* Contact Card */}
-            <div className=" p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className=" p-4 sm:py-2 px-0 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full text-[#000080]">
                   <img
                     src="/telephone-svgrepo-com.svg"
                     alt="Phone"
-                    className="h-10 w-10"
+                    className="h-8 w-8 fill=[#000080]"
                   />
                 </div>
                 <div className="text-left">
