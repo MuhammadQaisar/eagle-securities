@@ -35,7 +35,7 @@ const heroSlides = [
 const Hero = () => {
   return (
     <section
-      className="relative text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8"
+      className="relative text-white py-20 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden min-h-[600px] lg:min-h-screen"
       style={{
         backgroundColor: "#000080",
         fontFamily: "'Urbanist', sans-serif",
