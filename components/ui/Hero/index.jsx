@@ -1,3 +1,17 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+const heroSlides = [
+  { src: "/hero-image.png", alt: "Security Surveillance Background 1" },
+  { src: "/security-camera.avif", alt: "Security Surveillance Background 2" },
+  { src: "/Smart-Home-Security.jpg", alt: "Smart Home Security Background" },
+  { src: "/commercial-security.webp", alt: "Commercial Security Background" },
+];
+
 const Hero = () => {
   return (
     <section
@@ -8,12 +22,32 @@ const Hero = () => {
       }}
     >
       <div className="absolute inset-0 z-0">
-        <img
-          src="/hero-image.png" // Replace with your background image
-          alt="Security Surveillance Background"
-          className="w-full h-full object-cover opacity-30 h-64 sm:h-full object-top"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#000080] via-[#000080]/70 to-transparent opacity-80"></div>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 4500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          loop={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper w-full h-full"
+        >
+          {heroSlides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="w-full h-full object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#000080] via-[#000080]/70 to-transparent opacity-80"></div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className="relative z-40 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
