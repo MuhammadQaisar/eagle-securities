@@ -51,17 +51,15 @@ export default function Cta() {
         </div>
       </div>
 
-      {/* Image positioned absolutely to the bottom right (enlarged) */}
-      {/* <div className="hidden lg:block absolute bottom-0 right-0 w-full lg:w-11/12 h-[150%] z-50 pointer-events-auto">
-        <div className="relative w-full h-full z-50">
-          <Image
-            src="/CTA-image.png"
-            alt="Call to Action"
-            fill
-            style={{ objectFit: 'cover', objectPosition: 'bottom right' }}
-          />
-        </div>
-      </div> */}
+      {/* Image will be positioned on the right */}
+      <div className="hidden lg:block absolute bottom-0 right-0 h-full w-3/4">
+        {/* <Image
+          src="/cta-image.svg"
+          alt="Call to Action"
+          fill
+          className="object-contain object-bottom"
+        /> */}
+      </div>
     </section>
   );
 }

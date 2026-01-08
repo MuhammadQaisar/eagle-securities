@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
+
 
 const Contact = () => {
   return (
@@ -63,7 +63,7 @@ const Contact = () => {
                 />
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">info@eaglesecurities.org</p>
+                  <p className="text-gray-600">info@eaglesecurities.com</p>
                 </div>
               </div>
             </div>
