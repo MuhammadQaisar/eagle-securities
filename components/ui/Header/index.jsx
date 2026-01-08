@@ -12,16 +12,16 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 md:py-2">
+        <div className="flex justify-between items-center py-4 md:py-6">
           {" "}
           {/* Adjusted py for mobile */}
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="flex items-center">
               <img
-                src="/es-logo2.svg"
+                src="/es-logo.svg"
                 alt="Eagle Securities"
-                width={55}
-                height={55}
+                width={100}
+                height={100}
                 className="object-contain"
               />
               <div>
@@ -62,7 +62,7 @@ const Header = () => {
             {/* Original CTA button */}
             <Link
               href="/contact"
-              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266]"
+              className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
             >
               Schedule a Call
             </Link>
@@ -71,7 +71,7 @@ const Header = () => {
           <div className="-mr-2 flex items-center md:hidden">
             <button
               type="button"
-              className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266]"
+              className="rounded-md p-2 inline-flex items-center justify-center text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e]"
               aria-expanded="false"
               onClick={toggleMenu}
             >
@@ -114,7 +114,7 @@ const Header = () => {
             {/* Mobile CTA button - replicating the desktop button's text and link */}
             <Link
               href="/contact"
-              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#000080] to-[#003399] hover:from-[#000066] hover:to-[#002266] w-full"
+              className="ml-3 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gradient-to-r from-[#591A5D] to-[#7b2cbf] hover:from-[#4a154d] hover:to-[#6a1e9e] w-full"
               onClick={toggleMenu}
             >
               Schedule a Call

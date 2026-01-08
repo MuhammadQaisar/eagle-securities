@@ -19,8 +19,8 @@ const Footer = () => {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8 xl:col-span-1">
             <img
-              className="h-16 w-16"
-              src="/eagle-sec-footer.svg"
+              className="h-16 rounded"
+              src="/footer-logo.png"
               alt="Eagle Securities"
             />
             <p className="text-gray-400 text-base">

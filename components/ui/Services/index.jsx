@@ -182,14 +182,14 @@ const Services = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#000080] text-white px-4 py-2  rounded-full hover:bg-[#000066] transition-colors"
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 sm:-translate-x-12 bg-[#000080] text-white px-4 py-2  rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Previous service"
           >
             ❮
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#000080] text-white px-4 py-2  rounded-full hover:bg-[#000066] transition-colors"
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 sm:translate-x-12 bg-[#000080] text-white px-4 py-2  rounded-full hover:bg-[#4a154d] transition-colors"
             aria-label="Next service"
           >
             ❯
