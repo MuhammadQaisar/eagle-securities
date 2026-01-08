@@ -13,11 +13,11 @@ const About = () => {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <div className="lg:w-1/2 relative">
-            <div className="rounded-xl border-2 border-[#000080]/5 overflow-hidden relative overflow-hidden shadow-xl">
+            <div className="rounded-4xl relative overflow-hidden shadow-xl">
               <img
-                src="/about-image.svg"
-                alt=""
-                className="w-full h-auto object-cover object-center lg:w-full"
+                src="/security-camera.avif"
+                alt="About Eagle Securities"
+                className="w-full h-full object-cover object-center"
               />
               {/* Experience Badge */}
               {/* <div className="absolute bottom-0 left-0 bg-[#000080] text-white p-6 rounded-tr-2xl">
@@ -34,14 +34,15 @@ const About = () => {
             <h2 className="text-3xl md:text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#000080] to-[#003399]">
               About Us
             </h2>
-            <p className="text-2xl text-gray-600 mb-6 leading-relaxed">
+            <p className="text-md text-gray-600 mb-6 leading-relaxed">
               Eagle Securities is a leading provider of comprehensive security
-              solutions, dedicated to protecting homes, businesses, and
-              communities. With years of experience in the industry.
+              and surveillance solutions, dedicated to safeguarding homes,
+              businesses, and communities With years of experience in the
+              industry, we pride ourselves on our commitment to excellence.
             </p>
 
             {/* Features Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-2 gap-4 mb-8">
               {[
                 "Video Surveillance",
                 "24/7 Monitoring",
@@ -49,44 +50,34 @@ const About = () => {
                 "Smart Integration",
               ].map((feature) => (
                 <div key={feature} className="flex items-center gap-3">
-                  <img
-                    src="/check-circle-svgrepo-com.svg"
-                    alt="Checkmark"
-                    className="w-7 h-7 text-[#000080] flex-shrink-0"
-                  />
-                  <span className="text-gray-700 font-4xl">{feature}</span>
+                  <div className="w-2 h-2 rounded-full bg-[#000080]"></div>
+                  <span className="text-gray-700 font-xs">{feature}</span>
                 </div>
               ))}
             </div>
 
             <p className="text-gray-600 mb-5 leading-relaxed">
-              Our mission is to provide our clients with peace of mind by
-              delivering state-of-the-art security systems and exceptional
-              customer service. We specialize in a wide range of services,
-              including CCTV surveillance, access control, alarm monitoring, and
-              integrated security systems. At Eagle Securities, we understand
-              that every client has unique security needs. That's why we offer
-              customized solutions tailored to your specific requirements and
-              budget. Our team of certified professionals is committed to
-              ensuring your safety and security 24/7.
+              Our team of highly skilled professionals utilizes state-of-the-art
+              technology to design, install, and maintain security systems
+              tailored to your unique needs.
             </p>
 
             {/* Contact Card */}
-            <div className=" p-4 sm:py-2 px-0 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className=" p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="flex items-center gap-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-full text-[#000080]">
                   <img
-                    src="/email-9-svgrepo-com.svg"
+                    src="/telephone-svgrepo-com.svg"
                     alt="Phone"
-                    className="h-8 w-8 fill=[#000080]"
+                    className="h-10 w-10"
                   />
                 </div>
                 <div className="text-left">
                   <div className="text-sm text-gray-500 font-medium">
-                    Email Us
+                    Call Directly 24/7
                   </div>
                   <div className="text-lg font-bold text-[#000080]">
-                    info@eaglesecurities.org
+                    +1(346) 822-6074
                   </div>
                 </div>
               </div>
