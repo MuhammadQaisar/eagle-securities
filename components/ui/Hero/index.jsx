@@ -9,7 +9,7 @@ const heroSlides = [
   {
     src: "/hero-image.png",
     alt: "Security Surveillance Background 1",
-    title: "Your Trusted Partner in Security & Surveillance",
+    title: "24/7 Security & Surveillance monitoring solutions",
     description:
       "Protecting what matters most with cutting-edge technology and unwavering vigilance. Experience peace of mind with Eagle Securities.",
   },
@@ -90,16 +90,7 @@ const Hero = () => {
               <div className="absolute inset-0 z-10 max-w-7xl mx-auto flex lg:flex-row items-center justify-between gap-12">
                 <div className="lg:w-1/2 text-center lg:text-left">
                   <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold leading-tight mb-6 animate-fade-in-up">
-                    {slide.title.includes("Security & Surveillance") ? (
-                      <>
-                        Your Trusted Partner in{" "}
-                        <span className="text-[#a8dadc]">
-                          Security & Surveillance
-                        </span>
-                      </>
-                    ) : (
-                      slide.title
-                    )}
+                    {slide.title}
                   </h1>
                   <p className="text-lg sm:text-xl mb-8 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
                     {slide.description}
