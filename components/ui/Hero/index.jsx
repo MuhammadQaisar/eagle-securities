@@ -9,7 +9,7 @@ const heroSlides = [
   {
     src: "/hero-image.png",
     alt: "Security Surveillance Background 1",
-    title: "Your Trusted Partner in Security & Surveillance",
+    title: "24/7 Security & Surveillance",
     description:
       "Protecting what matters most with cutting-edge technology and unwavering vigilance. Experience peace of mind with Eagle Securities.",
   },
